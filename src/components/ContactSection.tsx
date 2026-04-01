@@ -17,16 +17,14 @@ const ContactSection = () => {
         </h2>
         <div className="flex items-center justify-center gap-12">
           {links.map((link) => (
-            <a
+            <button
               key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() => window.open(link.href, '_blank', 'noopener,noreferrer')}
               className="group flex flex-col items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-300"
             >
               <link.icon size={24} strokeWidth={1.5} />
               <span className="font-body text-[11px] tracking-[0.2em]">{link.label}</span>
-            </a>
+            </button>
           ))}
         </div>
 

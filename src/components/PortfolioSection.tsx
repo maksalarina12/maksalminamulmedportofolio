@@ -92,7 +92,7 @@ const PortfolioSection = () => {
                 </p>
                 <p className="font-body text-sm text-foreground leading-snug">{item.label}</p>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
