@@ -66,9 +66,11 @@ const PortfolioSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item) => (
-            <div
+            <a
               key={item.label}
-              onClick={() => window.open(item.href, '_blank', 'noopener,noreferrer')}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group cursor-pointer block"
             >
               <div className={`relative overflow-hidden ${item.aspect} bg-muted`}>
@@ -92,7 +94,7 @@ const PortfolioSection = () => {
                 </p>
                 <p className="font-body text-sm text-foreground leading-snug">{item.label}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

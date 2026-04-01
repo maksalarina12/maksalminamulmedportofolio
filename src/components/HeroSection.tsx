@@ -30,12 +30,14 @@ const HeroSection = () => {
               >
                 CONTACT
               </a>
-              <button
-                onClick={() => window.open('https://drive.google.com/file/d/1EOiBK47qVnRGcaimmnIwebPBwFY66Gwi/view?usp=drive_link', '_blank', 'noopener,noreferrer')}
+              <a
+                href="https://drive.google.com/file/d/1EOiBK47qVnRGcaimmnIwebPBwFY66Gwi/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-body text-xs tracking-[0.15em] font-medium text-foreground border border-foreground px-8 py-3 hover:bg-foreground hover:text-background transition-colors"
               >
                 CV
-              </button>
+              </a>
             </div>
           </div>
 
