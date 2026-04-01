@@ -1,11 +1,16 @@
+import logo from "@/assets/logo_maksalmina.png";
+
 const navLinks = ['ABOUT', 'PORTFOLIO', 'TOOLS', 'CONTACT'] as const;
 
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/85 border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-12">
-        <a href="#" className="font-heading text-lg font-bold tracking-[0.2em] text-foreground">
-          MAKSALMINA
+        <a href="#" className="flex items-center gap-3">
+          <img src={logo} alt="Maksalmina Logo" className="w-7 h-auto" />
+          <span className="font-heading text-lg font-bold tracking-[0.2em] text-foreground">
+            MAKSALMINA
+          </span>
         </a>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
