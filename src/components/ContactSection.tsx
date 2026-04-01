@@ -1,9 +1,9 @@
 import { Mail, Linkedin, Youtube } from "lucide-react";
 
 const links = [
-  { label: "EMAIL", icon: Mail, href: "mailto:hello@maksalmina.com" },
-  { label: "LINKEDIN", icon: Linkedin, href: "#" },
-  { label: "YOUTUBE", icon: Youtube, href: "#" },
+  { label: "EMAIL", icon: Mail, href: "mailto:lalomeproject@gmail.com" },
+  { label: "LINKEDIN", icon: Linkedin, href: "https://www.linkedin.com/in/maksalmina-arina-21688734a/" },
+  { label: "YOUTUBE", icon: Youtube, href: "https://www.youtube.com/@aryiion" },
 ];
 
 const ContactSection = () => {
@@ -20,6 +20,8 @@ const ContactSection = () => {
             <a
               key={link.label}
               href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex flex-col items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-300"
             >
               <link.icon size={24} strokeWidth={1.5} />

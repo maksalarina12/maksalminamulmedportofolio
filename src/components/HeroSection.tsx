@@ -1,4 +1,5 @@
 import portrait from "@/assets/portrait.jpg";
+import logo from "@/assets/logo_maksalmina.png";
 
 const HeroSection = () => {
   return (
@@ -7,6 +8,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left - Text */}
           <div className="animate-fade-up">
+            <img src={logo} alt="Maksalmina Logo" className="w-10 h-auto mb-6 opacity-70" />
             <p className="font-body text-xs tracking-[0.3em] text-muted-foreground mb-6">
               CREATIVE VIDEO EDITOR
             </p>
@@ -15,7 +17,7 @@ const HeroSection = () => {
               <br />
               <span className="text-primary">MAKSALMINA</span>
             </h1>
-            <div className="mt-10 flex items-center gap-6">
+            <div className="mt-10 flex items-center gap-4">
               <a
                 href="#portfolio"
                 className="font-body text-xs tracking-[0.15em] font-medium bg-primary text-primary-foreground px-8 py-3 hover:opacity-90 transition-opacity"
@@ -27,6 +29,14 @@ const HeroSection = () => {
                 className="font-body text-xs tracking-[0.15em] font-medium text-foreground border border-foreground px-8 py-3 hover:bg-foreground hover:text-background transition-colors"
               >
                 CONTACT
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1EOiBK47qVnRGcaimmnIwebPBwFY66Gwi/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-body text-xs tracking-[0.15em] font-medium text-foreground border border-foreground px-8 py-3 hover:bg-foreground hover:text-background transition-colors"
+              >
+                CV
               </a>
             </div>
           </div>
